@@ -1,0 +1,99 @@
+body,
+html {
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+  background-image: url("background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+#videoBackground {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url("background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.text-resume {
+  font-size: 30px;
+}
+
+.main-title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 5em;
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-title {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+        background: url(background.jpeg) #000 no-repeat center center fixed;
+    }
+}
+
+.navbar {
+  background-color: black !important;
+  opacity: 0.7;
+}
+
+.projets {
+  background-color: rgb(43, 42, 42);
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 480px) {
+  .projets {
+    height: 145em;
+  }
+}
+
+.fakeimg {
+  height: 300px;
+  background: #aaa;
+}
+
+.card {
+  margin: 2em;
+}
+
+.skills, .about {
+  margin-top: 15em;
+  background-color: rgb(43, 42, 42);
+  opacity: 0.85;
+}
+
+.profilPic {
+    border: solid black 10px;
+    padding: 10px;
+    background-color: black;
+    margin: 15px;
+    border-radius: 40% !important;
+}
+
+.description {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+    opacity: 0.85; 
+    margin: 2em; 
+}
+
+.card .btn {
+  text-transform: uppercase;
+  height: 50px;
+  width: 100px;
+}

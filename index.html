@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vayango Koné | Développeur Full Stack</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Odibee+Sans|Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- Video background -->
+    <video autoplay muted loop id="videoBackground">
+      <source src="background.mp4" type="video/mp4" />
+      <source src="background.webm" type="video/webm" />
+    </video>
+    <!-- Fin video background -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <a class="navbar-brand text-uppercase" href="#home">V</a>
+
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="collapsibleNavbar"
+      >
+        <ul class="navbar-nav text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="#projets">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Competences</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">A propos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Fin navbar-->
+
+    <!-- Titre d'accueil -->
+    <div class="container-fluid h-100 w-100" id="home">
+      <h1
+        class="row title h-50 w-100 justify-content-center align-items-end main-title"
+      >
+        Vayango Koné
+      </h1>
+      <h2 class="row w-100 justify-content-center main-title">
+        Developpeur Full Stack
+      </h2>
+    </div>
+    <!-- Fin titre d'accueil -->
+
+    <!-- Portfolio -->
+    <section class="container-fluid projets" id="projets">
+      <h1
+        class="row title  w-100 justify-content-center align-items-end main-title"
+      >
+        Portfolio
+      </h1>
+      <div class="row gallery justify-content-around">
+        <div class="card" style="width:400px">
+          <img class="card-img-top fakeimg" alt="Card image" />
+          <div class="card-body d-flex justify-content-around">
+            <button class="btn btn-secondary">Demo</button>
+            <button class="btn btn-dark">Code</button>
+          </div>
+        </div>
+        <div class="card" style="width:400px">
+          <img class="card-img-top fakeimg" alt="Card image" />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+          </div>
+        </div>
+        <div class="card" style="width:400px">
+          <img class="card-img-top fakeimg" alt="Card image" />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row gallery justify-content-around">
+        <div class="card" style="width:400px">
+          <img class="card-img-top fakeimg" alt="Card image" />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+          </div>
+        </div>
+        <div class="card" style="width:400px">
+          <img class="card-img-top fakeimg" alt="Card image" />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+          </div>
+        </div>
+        <div class="card" style="width:400px">
+          <img class="card-img-top fakeimg" alt="Card image" />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin portfolio -->
+
+    <section class="container-fluid skills" id="skills">
+      <h1
+        class="row title  w-100 justify-content-center align-items-end main-title"
+      >
+        Competences
+      </h1>
+      <div class="row gallery justify-content-around"></div>
+    </section>
+
+    <section class="container-fluid about" id="about">
+      <h1
+        class="row title  w-100 justify-content-center align-items-end main-title"
+      >
+        A propos
+      </h1>
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="profilPic.png"
+            class="rounded img-fluid profilPic"
+            alt="Photo de profil"
+          />
+        </div>
+        <div class="col-sm-8">
+          <p class="description">
+            Vayango Koné, passionné de sciences et de nouvelles technologies,
+            j'étudie l'informatique, notamment le développement web et mobile
+          </p>
+          <div class="contact description">
+            <img src="phone.png" alt="telephone" height="30px" width="30px" />
+            <span> : 06 29 36 00 72</span><br />
+            <img src="mail.png" alt="mail" height="30px" width="30px" />
+            <span> : vayango@hotmail.fr</span><br />
+            <img src="github.png" alt="github" height="30px" width="30px" />
+            <span> : https://github.com/jsswa</span><br />
+            <img src="linkedin.png" alt="linkedin" height="30px" width="30px" />
+            <span> : https://www.linkedin.com/in/vayango-koné/</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-white navbar navbar-expand-sm bg-dark justify-content-center">
+      © 2019 All rights reserved | Vayango Koné
+    </footer>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("a").on("click", function(event) {
+        if (this.hash !== "") {
+          event.preventDefault()
+          var hash = this.hash
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function() {
+              window.location.hash = hash
+            }
+          )
+        }
+      })
+    })
+  </script>
+</html>
+
+<!--Police à trouver
+pop up descriptif sur les img + hover
+liens sur les boutons
+finir les card
+representer les skills
+liens sur les contacts
+effet sur le logo
+-->
+
