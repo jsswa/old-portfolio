@@ -87,7 +87,7 @@ html {
 .description {
     text-transform: uppercase;
     color: white;
-    font-size: 2em;
+    font-size: 2vw;
     opacity: 0.85; 
     margin: 2em; 
 }
