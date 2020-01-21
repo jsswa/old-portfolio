@@ -2,11 +2,11 @@ body,
 html {
   height: 100%;
   font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
   background-image: url("background.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  scroll-behavior: smooth;
 }
 
 #videoBackground {
@@ -21,9 +21,14 @@ html {
   background-attachment: fixed;
 }
 
-.text-resume {
-  font-size: 30px;
+
+.description {
+  color: white;
+  font-size: 2vw;
+  opacity: 0.85; 
+  margin: 2em; 
 }
+
 
 .main-title {
   text-transform: uppercase;
@@ -35,7 +40,7 @@ html {
 .section-title {
   text-transform: uppercase;
   color: white;
-  font-size: 4em;
+  font-size: 4vw;
   opacity: 0.85;
 }
 
@@ -47,8 +52,14 @@ html {
 }
 
 @media screen and (max-device-width: 800px) {
-    html {
-        background: url(background.jpeg) #000 no-repeat center center fixed;
+    #videoBackground {
+      display: none;
+    }
+    .description {
+      font-size: 5vw;
+    }
+    .section-title {
+      font-size: 6vw;
     }
 }
 
@@ -62,11 +73,6 @@ html {
   opacity: 0.85;
 }
 
-@media screen and (max-width: 480px) {
-  .projets {
-    height: 145em;
-  }
-}
 
 .fakeimg {
   height: 300px;
@@ -83,19 +89,10 @@ html {
   opacity: 0.85;
 }
 
-.profilPic {
-    border: solid black 10px;
-    padding: 10px;
-    background-color: black;
-    margin: 15px;
-    border-radius: 40% !important;
-}
 
-.description {
-    color: white;
-    font-size: 2vw;
-    opacity: 0.85; 
-    margin: 2em; 
+
+.description a:visited, a:link {
+  color: white;
 }
 
 .card .btn {
